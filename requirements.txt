@@ -1,4 +1,9 @@
 python-dotenv #used to call environment variables
 pandas
 numpy
+pymongo
+certifi
+
+#-e . # used to trigger the setup.py file and creates entire project as a package
+
 
