@@ -3,6 +3,7 @@ pandas
 numpy
 pymongo
 certifi
+pymongo[srv]==3.6
 
 #-e . # used to trigger the setup.py file and creates entire project as a package
 
