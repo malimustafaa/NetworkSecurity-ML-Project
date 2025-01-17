@@ -118,7 +118,8 @@ class DataValidation:
                 test_dataframe.to_csv(self.data_validation_config.invalid_test_file_path,index=False,header=True)
 
                 
-            return DataValidationArtifact(status,self.data_validation_config.invalid_train_file_path,self.data_validation_config.valid_test_file_path,self.data_validation_config.invalid_train_file_path,self.data_validation_config.invalid_test_file_path,self.data_validation_config.data_drift_report_file_path)
+            return DataValidationArtifact(status,self.data_validation_config.valid_train_file_path,self.data_validation_config.valid_test_file_path,self.data_validation_config.invalid_train_file_path,self.data_validation_config.invalid_test_file_path,self.data_validation_config.data_drift_report_file_path)
+            # return DataValidationArtifact(status,self.data_validation_config.valid_train_file_path,self.data_validation_config.valid_test_file_path,self.data_validation_config.invalid_train_file_path,self.data_validation_config.invalid_test_file_path,self.data_validation_config.data_drift_report_file_path)
 
 
     

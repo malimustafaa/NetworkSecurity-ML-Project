@@ -41,4 +41,17 @@ DATA_VALIDATION_INVALID_DIR : str = "invalid"
 DATA_VALIDATION_DRIFT_REPORT_DIR:str = "drift_report"
 DATA_VALIDATION_DRIFT_REPORT_FILENAME:str = "report.yaml"
 
+"""
+Data Transformation related constants
+"""
+DATA_TRANSFORMATION_DIR_NAME:str = "data_transformation"
+DATA_TRANSFORMATION_TRANSFORMED_DATA_DIR:str = "transformed"
+DATA_TRANSFORMATION_TRANSFORMED_OBJECT_DIR:str = "transformed_object"
+PRE_PROCESSING_OBJECT_FILE_NAME = "preprocessor.pkl"
 
+#knn imputer for replacing nan values
+DATA_TRANSFORMATION_IMPUTER_PARAMS : dict = {
+    "missing_values":np.nan,
+    "n_neighbors":3, #calculate avg value of 3 nearest neighbor, and replace nan value with that
+    "weights":"uniform"
+}
