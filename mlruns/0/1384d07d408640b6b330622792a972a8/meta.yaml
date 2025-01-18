@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/user/Desktop/NetworkSecurity/mlruns/0/1384d07d408640b6b330622792a972a8/artifacts
+end_time: 1737192818322
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1384d07d408640b6b330622792a972a8
+run_name: flawless-midge-741
+run_uuid: 1384d07d408640b6b330622792a972a8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737192809014
+status: 3
+tags: []
+user_id: user

@@ -14,6 +14,11 @@ FILE_NAME:str = "phisingData.scv"
 TRAIN_FILE_NAME: str = "train.csv"
 TEST_FILE_NAME:str = "test.csv"
 SCHEMA_FILE_PATH = "networksecurity/data_schema/schema.yaml"
+
+MODEL_FILE_NAME = "trained_model.pkl"
+SAVED_MODEL_DIR = "savel_models"
+
+
 #os.path.join("data_schema","schema.yaml")
 
 
@@ -55,3 +60,13 @@ DATA_TRANSFORMATION_IMPUTER_PARAMS : dict = {
     "n_neighbors":3, #calculate avg value of 3 nearest neighbor, and replace nan value with that
     "weights":"uniform"
 }
+
+"""
+Model Trainer related constants
+"""
+
+MODEL_TRAINER_DIR_NAME:str = "model_trainer"
+MODEL_TRAINER_TRAINED_MODEL_DIR:str= "trained_model"
+#MODEL_TRAINER_TRAINED_MODEL_NAME:str= "trained_model.pkl"
+MODEL_TRAINER_EXPECTED_SCORE:float = 0.6
+MODEL_TRAINER_OVERFITTING_UNDERFITTING_THRESHOLD :float = 0.05
