@@ -4,9 +4,13 @@ numpy
 pymongo
 certifi
 scikit-learn
+dagshub
 pyaml
 mlflow
 dill
+fastapi
+uvicorn
+
 pymongo[srv]==3.6
 
 #-e . # used to trigger the setup.py file and creates entire project as a package

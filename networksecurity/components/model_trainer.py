@@ -19,6 +19,9 @@ from sklearn.ensemble import (
     RandomForestClassifier
 )
 import mlflow
+# copied from dagshub reote->experiment
+import dagshub
+dagshub.init(repo_owner='malimustafaa', repo_name='NetworkSecurity-ML-Project', mlflow=True)
 
 
 
@@ -48,7 +51,7 @@ class ModelTrainer:
                 '''
                  Saves the model to the MLflow run under the name "model".
                 '''
-                
+
 
             
         except Exception as e:
@@ -116,6 +119,7 @@ class ModelTrainer:
 
          Network_Model = NetworkModel(preprocessor,best_model)
          save_object(self.model_trainer_config.trained_model_file_path,Network_Model)
+         save_object("final_models/model.pkl",best_model)
          model_trainer_artifact = ModelTrainerartifact(best_model_name,self.model_trainer_config.trained_model_file_path,classification_train_metric,classification_test_metric)
          logging.info(f"Model trainer artifact: {model_trainer_artifact}")
          return model_trainer_artifact
